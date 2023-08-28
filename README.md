@@ -12,7 +12,7 @@
 - Testing: [Junit Jupiter](https://junit.org/)
 
 ## Application Initialization
-To start the application, click on the option spring-boot:run.
+- Intellij Idea: To start the application, click on the option spring-boot:run.  
 
 
 ## DataBase Config
@@ -44,7 +44,8 @@ Click the 'Connect' button.
 
 
 ## Unit Testing:
-- Click on the 'test' option, located under the 'Lifecycle' tab in Maven. 
+- Command line: mvn test
+- Intellij Idea: Click on the 'test' option, located under the 'Lifecycle' tab in Maven. 
 
 ## Postman Testing:
 - Import the eCommerce.postman_collection.json file, located in the static resources folder into Postman.
