@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "b4a7ce56-d389-4739-bb29-d23ef098f2ff",
+		"name": "eCommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "182296",
+		"_collection_link": "https://planetary-zodiac-129043.postman.co/workspace/a9edb8ee-c129-40cb-8e90-fb6c35524d66/collection/182296-b4a7ce56-d389-4739-bb29-d23ef098f2ff?action=share&source=collection_link&creator=182296"
+	},
+	"item": [
+		{
+			"name": "addCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ecommerce/cart",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ecommerce",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ecommerce/cart/c0f4da2b-e7d3-4b1d-830d-6980f741d1f7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ecommerce",
+						"cart",
+						"c0f4da2b-e7d3-4b1d-830d-6980f741d1f7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ecommerce/cart/c0f4da2b-e7d3-4b1d-830d-6980f741d1f7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ecommerce",
+						"cart",
+						"c0f4da2b-e7d3-4b1d-830d-6980f741d1f7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"description\":\"T-Shirt\", \"amount\":2}, {\"description\":\"Paint\", \"amount\":1}, {\"description\":\"shorts\", \"amount\":7} ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ecommerce/cart/c0f4da2b-e7d3-4b1d-830d-6980f741d1f7/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ecommerce",
+						"cart",
+						"c0f4da2b-e7d3-4b1d-830d-6980f741d1f7",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
